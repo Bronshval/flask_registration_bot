@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Account_{{ user.login }}
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-4">
+<h1>Account of {{ user.login }}</h1>
+<p>Name: {{ user.name }}</p>
+<p>Telegram: {{ user.telegram_name }}</p>
+<p>Age: {{ user.age }}</p>
+<p>Password: {{ user.password }}</p>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
